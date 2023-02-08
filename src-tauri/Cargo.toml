@@ -19,7 +19,7 @@
 [package]
   authors = ["Andre Cox"]
   default-run = "app"
-  description = "A project that is used to calculate the electrical values of components"
+  description = "A program to calculate the values of electrical components"
   edition = "2021"
   license = ""
   name = "e-toolbox"
