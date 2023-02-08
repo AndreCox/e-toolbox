@@ -17,7 +17,7 @@
     "android": "yarn build && next export && cap run android",
     "ios": "yarn build && next export && cap run ios",
     "open-browser": "open-cli http://localhost:3000",
-    "deploy": "next build && next export && gh-pages -d out"
+    "deploy": "next build && next export && gh-pages -t true -d out"
   },
   "dependencies": {
     "@capacitor/android": "^3.6.0",
