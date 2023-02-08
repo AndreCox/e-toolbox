@@ -27,7 +27,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/AndreCox/e-toolbox"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Image
           alt="Github Logo"
           src={githubLogo}
