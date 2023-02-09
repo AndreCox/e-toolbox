@@ -67,6 +67,7 @@ const eseries = (e: number) => {
 
     default: {
       eout = [];
+      console.log("Error: Invalid e series");
       break;
     }
   }

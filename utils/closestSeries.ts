@@ -14,5 +14,5 @@ export default function closestSeries(series: number, value: number) {
   let out = E[m] * Math.pow(10, expon);
   let out_err = (out - value) / value;
 
-  return { out, out_err };
+  return [out, out_err];
 }
