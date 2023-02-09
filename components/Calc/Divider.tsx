@@ -1,6 +1,7 @@
 import { Card, Select, Option, Input } from "@material-tailwind/react";
 import { useState, useEffect } from "react";
 import divider from "../../utils/divider";
+import formatter from "../../utils/formatter";
 
 export function Divider() {
   const [eSeries, setESeries] = useState(3);
@@ -75,7 +76,7 @@ export function Divider() {
                   {Array.from(Object.values(row)).map((value, j) => {
                     return (
                       <td key={j} className="border px-4 py-2">
-                        {isNaN(value) ? "N/A" : value.toFixed(3)}
+                        {isNaN(value) ? "N/A" : formatter(value)}
                         {j === 4 && !isNaN(value) ? "%" : ""}
                       </td>
                     );

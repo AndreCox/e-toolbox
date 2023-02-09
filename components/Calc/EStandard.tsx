@@ -1,6 +1,7 @@
 import { Card, Select, Option, Input } from "@material-tailwind/react";
 import React, { useEffect, useState } from "react";
 import closestSeries from "../../utils/closestSeries";
+import formatter from "../../utils/formatter";
 export function EStandard() {
   const [Eseries, setEseries] = useState(3);
   const [ArbitraryValue, setArbitraryValue] = useState(0);
@@ -43,7 +44,7 @@ export function EStandard() {
         <div>
           <h3>Standard Value</h3>
           <h3 className="text-blue-500 font-bold text-center text-lg">
-            {isNaN(StandardValue) ? "0" : StandardValue}
+            {isNaN(StandardValue) ? "0" : formatter(StandardValue)}
           </h3>
         </div>
         <div>
